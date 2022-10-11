@@ -1,24 +1,25 @@
 import React from "react";
 
-export default function MovieItem({imageUrl ,imageAlt , year, title , distributor , amount}) {
+export default function MovieItem(props) {
   return (
-    <div className="card" style={{width: '18rem'}}>
+          
+            <div className="card" style={{width: '18rem' , backgroundColor: props.cardTheme}} >
       <img
-        src={imageUrl}
+        src={props.imageUrl}
         className="card-img-top"
-        alt={imageAlt}
+        alt={props.imageAlt}
       />
       <div className="card-body">
         <h3 className="card-text">
-         #{title} ({year})
+         #{props.title} ({props.year})
         </h3>
         <hr />
         <p>
-        Distributor : {distributor}
+        Distributor : {props.distributor}
         </p>
         <hr />
         <span>
-          Amount : {amount}
+          Amount : {props.amount}
         </span>
       </div>
     </div>
