@@ -42,7 +42,37 @@
 .raw{
   display: flex;
    flex-direction: row;
-   justify-content: space-evenly;
-   gap:10rem;
+   justify-content: space-around;
+   object-fit: contain;
    flex-wrap: wrap;
+   gap: 10rem;
+   row-gap: 0rem;
+   height: fit-content;
+   margin-top: 50px;
+   
 }
+
+/* .card {
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+   background-color: #282c34;
+   border-radius: 20px;
+} */
+ .card-img-top {
+  object-fit: contain;
+  width: 150px;
+  height: 200px;
+  padding-top: 2rem;
+ }
+ /* .card-body {
+  height: 50%;
+ } */
+
+ .dark {
+  height: fit-content;
+ }
