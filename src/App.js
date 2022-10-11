@@ -3,7 +3,7 @@ import Movies from "./component/Movies";
 import "./App.css";
 
 export default function App() {
-  const [theme, setTheme] = useState("#323133");
+  const [theme, setTheme] = useState("white");
   const [cardTheme, setCardTheme] = useState("#808080");
 
   const changeTheme = () =>{
